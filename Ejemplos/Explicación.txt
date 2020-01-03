@@ -1,0 +1,34 @@
+-deftemplate, Defina una "clase".
+
+ejemplo:
+
+	(deftemplate Persona
+		(field Nombre)
+		(field Edad)
+		(field Sexo)
+		(field EstadoCivil)
+	) 
+
+-Deffacts, define un hecho(lo que seria un objeto de la clase).
+
+ejemplo:
+
+	(deffacts HechosSistemaExtincion
+ 		(SistemaExtincion
+ 		(tipo DioxidoCarbono)
+ 		(status activado)
+ 		(UltimaRevision diciembre)))
+	)  
+
+-defrule, sirve para definir una condicion.
+
+ejemplo:
+	(deftemplate FichaPaciente
+ 		(field Nombre)
+		(field Casado)
+		(field Direccion)
+	) 
+
+-retract, borra los hechos(objetos).
+ (retract 1 2) el numero dice cuales queremos borrar.
+ (retract *) borra todos. 
